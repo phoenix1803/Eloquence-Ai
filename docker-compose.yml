@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env.local
+    depends_on:
+      - rag-service
+
+  rag-service:
+    build: ./python_rag_service
+    ports:
+      - "8000:8000"
+    environment:
+      - QDRANT_URL=${QDRANT_URL}
+      - QDRANT_API_KEY=${QDRANT_API_KEY}
+    volumes:
+      - ./python_rag_service:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+
+volumes:
+  qdrant_data:

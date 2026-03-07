@@ -10,7 +10,7 @@
 - **Adaptive Questioning**: AI adjusts difficulty and asks curveball questions
 - **Natural TTS**: Human-like AI voice responses with optimized delivery
 - **Smart Rate Limiting**: Prevents API quota exhaustion with intelligent fallbacks
-
+ 
 ### **Second Brain Knowledge System**
 - **RAG-Powered**: Qdrant vector database with semantic search
 - **Dual Modes**: 

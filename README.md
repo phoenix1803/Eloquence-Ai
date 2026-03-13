@@ -1,4 +1,4 @@
-# Eloquence-AI: Advanced Interview Preparation Platform 
+# Eloquence-AI: Advanced Interview Preparation Platform  
 
 > **The most advanced AI-powered interview preparation platform** featuring real-time voice analysis, intelligent AI interviewers, and a comprehensive Second Brain knowledge system.
 
